@@ -12,13 +12,13 @@
       
       
       
-        <link rel="canonical" href="https://embedded-systems-design.github.io/template_report/charts/">
+        <link rel="canonical" href="https://embedded-systems-design.github.io/template_report/teamOrg/">
       
       
         <link rel="prev" href="../appendix/">
       
       
-        <link rel="next" href="../second-page/">
+        <link rel="next" href="../subfolder/">
       
       
       <link rel="icon" href="../static/logo.png">
@@ -29,7 +29,7 @@
 
     
       
-        <title>Charts - EGR314 Team 202 GITHUB Website</title>
+        <title>Team Organization - EGR314 Team 202 GITHUB Website</title>
       
     
     
@@ -92,6 +92,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#roles" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -123,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Charts
+              Team Organization
             
           </span>
         </div>
@@ -219,7 +224,7 @@
   
     
   
-  Block Diagram, Process Diagram, and Message Structure
+  Block Diagram
 
       </a>
     </li>
@@ -272,24 +277,7 @@
   
     
   
-  Charts
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../second-page/" class="md-tabs__link">
-        
-  
-    
-  
-  Second Page
+  Team Organization
 
       </a>
     </li>
@@ -395,7 +383,7 @@
         
   
   <span class="md-ellipsis">
-    Block Diagram, Process Diagram, and Message Structure
+    Block Diagram
   </span>
   
 
@@ -455,35 +443,65 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Team Organization
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Charts
+    Team Organization
   </span>
   
 
       </a>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../second-page/" class="md-nav__link">
         
-  
-  <span class="md-ellipsis">
-    Second Page
-  </span>
-  
 
-      </a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#roles" class="md-nav__link">
+    Roles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communication" class="md-nav__link">
+    Communication
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#weekly-availability" class="md-nav__link">
+    Weekly Availability
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -547,6 +565,35 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#roles" class="md-nav__link">
+    Roles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communication" class="md-nav__link">
+    Communication
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#weekly-availability" class="md-nav__link">
+    Weekly Availability
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -560,7 +607,7 @@
                   
 
   
-    <a href="https://github.com/embedded-systems-design/template_report/edit/main/docs/charts.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/embedded-systems-design/template_report/edit/main/docs/teamOrg.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -568,35 +615,359 @@
   
 
 
-  <h1>Charts</h1>
+  <h1>Team Organization</h1>
 
-<pre class="mermaid"><code>graph LR
-  A[Start] --&gt; B{Error?};
-  B --&gt;|Yes| C[Hmm...];
-  C --&gt; D[Debug];
-  D --&gt; B;
-  B ----&gt;|No| E[Yay!];</code></pre>
-<pre class="mermaid"><code>sequenceDiagram
-  autonumber
-  Alice-&gt;&gt;John: Hello John, how are you?
-  loop Healthcheck
-      John-&gt;&gt;John: Fight against hypochondria
-  end
-  Note right of John: Rational thoughts!
-  John--&gt;&gt;Alice: Great!
-  John-&gt;&gt;Bob: How about you?
-  Bob--&gt;&gt;John: Jolly good!</code></pre>
-<pre class="mermaid"><code>stateDiagram-v2
-  state fork_state &lt;&lt;fork&gt;&gt;
-    [*] --&gt; fork_state
-    fork_state --&gt; State2
-    fork_state --&gt; State3
-
-    state join_state &lt;&lt;join&gt;&gt;
-    State2 --&gt; join_state
-    State3 --&gt; join_state
-    join_state --&gt; State4
-    State4 --&gt; [*]</code></pre>
+<h2 id="roles">Roles</h2>
+<table>
+<thead>
+<tr>
+<th>Roles</th>
+<th>Member</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Submitter/ Lead</td>
+<td>Luis Saenz</td>
+<td>Submits assignments, as well as upload to github. The lead, ensures that each member has a contribution and tracks upcoming assignments.</td>
+</tr>
+<tr>
+<td>Team Organizer</td>
+<td>Frank Wade</td>
+<td>Calls team meetings and records team sessions.</td>
+</tr>
+<tr>
+<td>Technical Lead</td>
+<td>Tyler Whittle</td>
+<td>Resolves technical issues, and provides solutions to technical concerns of other members</td>
+</tr>
+<tr>
+<td>Design Lead</td>
+<td>Alexander Dooley</td>
+<td>Designs teams product.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="communication">Communication</h2>
+<p>Types of communication that Team 202 uses:</p>
+<table>
+<thead>
+<tr>
+<th>Communication Type</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Discord</td>
+<td>To share files and conduct everyday communication.</td>
+</tr>
+<tr>
+<td>Text Message Group</td>
+<td>Only used for communication second to Discord.</td>
+</tr>
+<tr>
+<td>Google Folder</td>
+<td>Primarily used to share files</td>
+</tr>
+</tbody>
+</table>
+<h2 id="weekly-availability">Weekly Availability</h2>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Sunday</th>
+<th>Monday</th>
+<th>Tuesday</th>
+<th>Wednesday</th>
+<th>Thursday</th>
+<th>Friday</th>
+<th>Saturday</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>08:00</td>
+<td></td>
+<td>FW</td>
+<td></td>
+<td>FW</td>
+<td></td>
+<td></td>
+<td>AD</td>
+</tr>
+<tr>
+<td>08:30</td>
+<td></td>
+<td>FW</td>
+<td></td>
+<td>FW</td>
+<td></td>
+<td></td>
+<td>AD</td>
+</tr>
+<tr>
+<td>09:00</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>LS</td>
+<td>AD</td>
+</tr>
+<tr>
+<td>09:30</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>LS</td>
+<td>AD</td>
+</tr>
+<tr>
+<td>10:00</td>
+<td>LS</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>LS</td>
+<td>AD</td>
+</tr>
+<tr>
+<td>10:30</td>
+<td>LS</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>LS</td>
+<td>AD</td>
+</tr>
+<tr>
+<td>11:00</td>
+<td>LS</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>LS</td>
+<td>AD</td>
+</tr>
+<tr>
+<td>11:30</td>
+<td>LS</td>
+<td></td>
+<td>FW</td>
+<td></td>
+<td>FW</td>
+<td>LS</td>
+<td></td>
+</tr>
+<tr>
+<td>12:00</td>
+<td>LS FW</td>
+<td>LS</td>
+<td>FW</td>
+<td>LS FW</td>
+<td>FW</td>
+<td>LS FW</td>
+<td>FW</td>
+</tr>
+<tr>
+<td>12:30</td>
+<td>LS</td>
+<td>LS</td>
+<td>FW</td>
+<td>LS FW</td>
+<td>FW</td>
+<td>LS</td>
+<td></td>
+</tr>
+<tr>
+<td>13:00</td>
+<td>LS</td>
+<td>LS</td>
+<td>FW</td>
+<td>LS AD FW</td>
+<td>FW</td>
+<td>LS AD</td>
+<td></td>
+</tr>
+<tr>
+<td>13:30</td>
+<td>LS</td>
+<td>LS</td>
+<td></td>
+<td>LS AD FW</td>
+<td></td>
+<td>LS AD</td>
+<td></td>
+</tr>
+<tr>
+<td>14:00</td>
+<td>LS</td>
+<td>LS</td>
+<td></td>
+<td>LS AD FW</td>
+<td></td>
+<td>LS AD</td>
+<td>LS</td>
+</tr>
+<tr>
+<td>14:30</td>
+<td>LS</td>
+<td>LS</td>
+<td></td>
+<td>LS</td>
+<td></td>
+<td>LS AD</td>
+<td>LS</td>
+</tr>
+<tr>
+<td>15:00</td>
+<td>LS</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>LS AD</td>
+<td>LS</td>
+</tr>
+<tr>
+<td>16:30</td>
+<td>LS</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>LS</td>
+<td>LS</td>
+</tr>
+<tr>
+<td>17:00</td>
+<td>LS</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>LS</td>
+<td>LS</td>
+</tr>
+<tr>
+<td>17:30</td>
+<td>LS</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>LS</td>
+<td>LS</td>
+</tr>
+<tr>
+<td>18:00</td>
+<td>LS</td>
+<td></td>
+<td>LS</td>
+<td></td>
+<td>LS</td>
+<td>LS</td>
+<td>LS</td>
+</tr>
+<tr>
+<td>18:30</td>
+<td>LS</td>
+<td></td>
+<td>LS</td>
+<td></td>
+<td>LS</td>
+<td>LS</td>
+<td>LS</td>
+</tr>
+<tr>
+<td>19:00</td>
+<td>LS</td>
+<td></td>
+<td>LS</td>
+<td></td>
+<td>LS</td>
+<td>LS</td>
+<td>LS</td>
+</tr>
+<tr>
+<td>19:30</td>
+<td>LS</td>
+<td></td>
+<td>LS</td>
+<td></td>
+<td>LS</td>
+<td>LS</td>
+<td>LS</td>
+</tr>
+<tr>
+<td>20:00</td>
+<td>LS</td>
+<td>LS</td>
+<td>LS</td>
+<td>FW</td>
+<td>LS</td>
+<td>LS</td>
+<td>LS FW</td>
+</tr>
+<tr>
+<td>20:30</td>
+<td></td>
+<td>LS</td>
+<td>LS</td>
+<td>LS FW</td>
+<td>LS</td>
+<td>LS AD</td>
+<td>LS AD FW</td>
+</tr>
+<tr>
+<td>21:00</td>
+<td></td>
+<td>LS</td>
+<td>LS</td>
+<td>LS FW</td>
+<td>LS</td>
+<td>LS AD FW</td>
+<td>LS AD FW</td>
+</tr>
+<tr>
+<td>21:30</td>
+<td></td>
+<td>LS</td>
+<td>LS</td>
+<td>LS FW</td>
+<td>LS</td>
+<td>LS AD FW</td>
+<td>LS AD FW</td>
+</tr>
+<tr>
+<td>22:00</td>
+<td></td>
+<td>LS</td>
+<td>LS</td>
+<td>LS FW</td>
+<td>LS</td>
+<td>LS FW</td>
+<td>LS AD FW</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong> Wade work F/S/S 7-5:30, M 2:30-5:30</p>
+<p><strong>Legend:</strong></p>
+<ul>
+<li>LS: Luis</li>
+<li>TW: Tyler</li>
+<li>FW: Frank</li>
+<li>AD: Alex</li>
+</ul>
 
 
 
@@ -641,13 +1012,13 @@
         
         
           
-          <a href="../second-page/" class="md-footer__link md-footer__link--next" aria-label="Next: Second Page" rel="next">
+          <a href="../subfolder/" class="md-footer__link md-footer__link--next" aria-label="Next: This is the index to a subfolder" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Second Page
+                This is the index to a subfolder
               </div>
             </div>
             <div class="md-footer__button md-icon">
