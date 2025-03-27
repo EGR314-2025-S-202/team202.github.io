@@ -780,7 +780,7 @@
 <table>
 <thead>
 <tr>
-<th>Message Type <br /> byte 1-2 <br /> (char)</th>
+<th>Message Type <br /> 1 Byte <br /> (int8_t)</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -823,28 +823,28 @@
 <table>
 <thead>
 <tr>
-<th>Byte 1 (uint8_t)</th>
-<th>Byte 2 (uint8_t)</th>
+<th>Byte 1 (char)</th>
+<th>Byte 2 (char)</th>
 <th>Byte 3 (char)</th>
 <th>Byte 4 (char)</th>
-<th>Byte 5-6 (char)</th>
+<th>Byte 6 (int8_t)</th>
+<th>Byte 6 (char)</th>
 <th>Byte 7 (char)</th>
 <th>Byte 8 (char)</th>
-<th>Byte 9 (uint8_t)</th>
-<th>Byte 10 (uint8_t)</th>
+<th>Byte 9 (char)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>0x41</td>
-<td>0x5a</td>
+<td>A</td>
+<td>Z</td>
 <td>Source ID (char)</td>
 <td>Dest ID (char)</td>
-<td>Message Type (char)</td>
+<td>Message Type (int8_t)</td>
 <td>X(char)</td>
 <td>Y(char)</td>
-<td>0x59</td>
-<td>0x42</td>
+<td>Y</td>
+<td>B</td>
 </tr>
 </tbody>
 </table>
@@ -852,28 +852,28 @@
 <table>
 <thead>
 <tr>
-<th>Byte 1 (uint8_t)</th>
-<th>Byte 2 (uint8_t)</th>
+<th>Byte 1 (char)</th>
+<th>Byte 2 (char)</th>
 <th>Byte 3 (char)</th>
 <th>Byte 4 (char)</th>
-<th>Byte 5-6 (char)</th>
-<th>Byte 7 (char)</th>
+<th>Byte 5 (int8_t)</th>
+<th>Byte 6 (char)</th>
+<th>Byte 7 (int8_t)</th>
 <th>Byte 8 (char)</th>
-<th>Byte 9 (uint8_t)</th>
-<th>Byte 10 (uint8_t)</th>
+<th>Byte 9 (char)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>0x41</td>
-<td>0x5a</td>
+<td>A</td>
+<td>Z</td>
 <td>Source ID (char)</td>
 <td>Dest ID (char)</td>
-<td>Message Type (char)</td>
+<td>Message Type (int8_t)</td>
 <td>X(char)</td>
-<td>Y(char)</td>
-<td>0x59</td>
-<td>0x42</td>
+<td>Y(int8_t)</td>
+<td>Y</td>
+<td>B</td>
 </tr>
 </tbody>
 </table>
@@ -881,26 +881,26 @@
 <table>
 <thead>
 <tr>
-<th>Byte 1 (uint8_t)</th>
-<th>Byte 2 (uint8_t)</th>
+<th>Byte 1 (char)</th>
+<th>Byte 2 (char)</th>
 <th>Byte 3 (char)</th>
 <th>Byte 4 (char)</th>
-<th>Byte 5-6 (char)</th>
-<th>Byte 7-55 (char)</th>
-<th>Byte 56 (uint8_t)</th>
-<th>Byte 57 (uint8_t)</th>
+<th>Byte 5 (int8_t)</th>
+<th>Byte 6-55 (char)</th>
+<th>Byte 56 (char)</th>
+<th>Byte 57 (char)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>0x41</td>
-<td>0x5a</td>
+<td>A</td>
+<td>Z</td>
 <td>Source ID (char)</td>
 <td>Dest ID (char)</td>
-<td>Message Type (char)</td>
+<td>Message Type (int8_t)</td>
 <td>String</td>
-<td>0x59</td>
-<td>0x42</td>
+<td>Y</td>
+<td>B</td>
 </tr>
 </tbody>
 </table>
@@ -908,26 +908,26 @@
 <table>
 <thead>
 <tr>
-<th>Byte 1 (uint8_t)</th>
-<th>Byte 2 (uint8_t)</th>
+<th>Byte 1 (char)</th>
+<th>Byte 2 (char)</th>
 <th>Byte 3 (char)</th>
 <th>Byte 4 (char)</th>
-<th>Byte 5-6 (char)</th>
-<th>Byte 7 (uint8_t)</th>
-<th>Byte 8 (uint8_t)</th>
-<th>Byte 9 (uint8_t)</th>
+<th>Byte 5 (int8_t)</th>
+<th>Byte 6 (uint8_t)</th>
+<th>Byte 7 (char)</th>
+<th>Byte 8 (char)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>0x41</td>
-<td>0x5a</td>
+<td>A</td>
+<td>Z</td>
 <td>Source ID (char)</td>
 <td>Dest ID (char)</td>
-<td>Message Type (char)</td>
+<td>Message Type (int8_t)</td>
 <td>X(uint8_t)</td>
-<td>0x59</td>
-<td>0x42</td>
+<td>Y</td>
+<td>B</td>
 </tr>
 </tbody>
 </table>
@@ -935,26 +935,26 @@
 <table>
 <thead>
 <tr>
-<th>Byte 1 (uint8_t)</th>
-<th>Byte 2 (uint8_t)</th>
+<th>Byte 1 (char)</th>
+<th>Byte 2 (char)</th>
 <th>Byte 3 (char)</th>
 <th>Byte 4 (char)</th>
-<th>Byte 5-6 (char)</th>
+<th>Byte 5 (int8_t)</th>
+<th>Byte 6 (char)</th>
 <th>Byte 7 (char)</th>
-<th>Byte 8 (uint8_t)</th>
-<th>Byte 9 (uint8_t)</th>
+<th>Byte 8 (char)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>0x41</td>
-<td>0x5a</td>
+<td>A</td>
+<td>Z</td>
 <td>Source ID (char)</td>
 <td>Dest ID (char)</td>
-<td>Message Type (char)</td>
+<td>Message Type (int8_t)</td>
 <td>X(char)</td>
-<td>0x59</td>
-<td>0x42</td>
+<td>Y</td>
+<td>B</td>
 </tr>
 </tbody>
 </table>
@@ -962,26 +962,26 @@
 <table>
 <thead>
 <tr>
-<th>Byte 1 (uint8_t)</th>
-<th>Byte 2 (uint8_t)</th>
+<th>Byte 1 (char)</th>
+<th>Byte 2 (char)</th>
 <th>Byte 3 (char)</th>
 <th>Byte 4 (char)</th>
-<th>Byte 5-6 (char)</th>
-<th>Byte 7 (uint8_t)</th>
-<th>Byte 8 (uint8_t)</th>
-<th>Byte 9 (uint8_t)</th>
+<th>Byte 5 (int8_t)</th>
+<th>Byte 6 (uint8_t)</th>
+<th>Byte 7 (char)</th>
+<th>Byte 7 (char)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>0x41</td>
-<td>0x5a</td>
+<td>A</td>
+<td>Z</td>
 <td>Source ID (char)</td>
 <td>Dest ID (char)</td>
-<td>Message Type (char)</td>
+<td>Message Type (int8_t)</td>
 <td>X(uint8_t)</td>
-<td>0x59</td>
-<td>0x42</td>
+<td>Y</td>
+<td>B</td>
 </tr>
 </tbody>
 </table>
@@ -989,26 +989,26 @@
 <table>
 <thead>
 <tr>
-<th>Byte 1 (uint8_t)</th>
-<th>Byte 2 (uint8_t)</th>
+<th>Byte 1 (char)</th>
+<th>Byte 2 (char)</th>
 <th>Byte 3 (char)</th>
 <th>Byte 4 (char)</th>
-<th>Byte 5-6 (char)</th>
-<th>Byte 7 (uint8_t)</th>
-<th>Byte 8 (uint8_t)</th>
-<th>Byte 9 (uint8_t)</th>
+<th>Byte 5 (int8_t)</th>
+<th>Byte 6 (uint8_t)</th>
+<th>Byte 7 (char)</th>
+<th>Byte 8 (char)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>0x41</td>
-<td>0x5a</td>
+<td>A</td>
+<td>Z</td>
 <td>Source ID (char)</td>
 <td>Dest ID (char)</td>
-<td>Message Type (char)</td>
+<td>Message Type (int8_t)</td>
 <td>X(uint8_t)</td>
-<td>0x59</td>
-<td>0x42</td>
+<td>Y</td>
+<td>B</td>
 </tr>
 </tbody>
 </table>
@@ -1016,26 +1016,26 @@
 <table>
 <thead>
 <tr>
-<th>Byte 1 (uint8_t)</th>
-<th>Byte 2 (uint8_t)</th>
+<th>Byte 1 (char)</th>
+<th>Byte 2 (char)</th>
 <th>Byte 3 (char)</th>
 <th>Byte 4 (uint8_t)</th>
-<th>Byte 5-6 (char)</th>
-<th>Byte 7-55 (char)</th>
-<th>Byte 56 (uint8_t)</th>
-<th>Byte 57 (uint8_t)</th>
+<th>Byte 5 (int8_t)</th>
+<th>Byte 6-55 (char)</th>
+<th>Byte 56 (char)</th>
+<th>Byte 57 (char)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>0x41</td>
-<td>0x5a</td>
+<td>A</td>
+<td>Z</td>
 <td>Source ID (char)</td>
 <td>0x58</td>
-<td>Message Type (char)</td>
+<td>Message Type (int8_t)</td>
 <td>String</td>
-<td>0x59</td>
-<td>0x42</td>
+<td>Y</td>
+<td>B</td>
 </tr>
 </tbody>
 </table>
