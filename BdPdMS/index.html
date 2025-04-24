@@ -454,13 +454,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#team-verification" class="md-nav__link">
-    Team Verification:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#message-type-1" class="md-nav__link">
     Message Type 1:
   </a>
@@ -488,44 +481,23 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#message-type-5" class="md-nav__link">
-    Message Type 5:
-  </a>
+      </ul>
+    </nav>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#message-type-6" class="md-nav__link">
-    Message Type 6:
+      
+        <li class="md-nav__item">
+  <a href="#team-verification-table" class="md-nav__link">
+    Team Verification Table:
   </a>
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#message-type-7" class="md-nav__link">
-    Message Type 7:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#message-type-8" class="md-nav__link">
-    Message Type 8:
-  </a>
-  
-    <nav class="md-nav" aria-label="Message Type 8:">
+    <nav class="md-nav" aria-label="Team Verification Table:">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#wifi-status-code-key" class="md-nav__link">
-    Wifi Status Code Key
+  <a href="#team-verification" class="md-nav__link">
+    Team Verification:
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -696,13 +668,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#team-verification" class="md-nav__link">
-    Team Verification:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#message-type-1" class="md-nav__link">
     Message Type 1:
   </a>
@@ -730,44 +695,23 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#message-type-5" class="md-nav__link">
-    Message Type 5:
-  </a>
+      </ul>
+    </nav>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#message-type-6" class="md-nav__link">
-    Message Type 6:
+      
+        <li class="md-nav__item">
+  <a href="#team-verification-table" class="md-nav__link">
+    Team Verification Table:
   </a>
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#message-type-7" class="md-nav__link">
-    Message Type 7:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#message-type-8" class="md-nav__link">
-    Message Type 8:
-  </a>
-  
-    <nav class="md-nav" aria-label="Message Type 8:">
+    <nav class="md-nav" aria-label="Team Verification Table:">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#wifi-status-code-key" class="md-nav__link">
-    Wifi Status Code Key
+  <a href="#team-verification" class="md-nav__link">
+    Team Verification:
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -815,34 +759,18 @@
 <tbody>
 <tr>
 <td>1</td>
-<td>Set motor X in Y in direction</td>
+<td>Set motor in X position</td>
 </tr>
 <tr>
 <td>2</td>
-<td>Print sensor X value Y</td>
+<td>Print sensor value, X</td>
 </tr>
 <tr>
 <td>3</td>
-<td>Subsystem Wifi Error Message</td>
+<td>Set target RPM, X</td>
 </tr>
 <tr>
 <td>4</td>
-<td>Subsystem Wifi Status X</td>
-</tr>
-<tr>
-<td>5</td>
-<td>Subsystem X is not communicating</td>
-</tr>
-<tr>
-<td>6</td>
-<td>Motor Status, X</td>
-</tr>
-<tr>
-<td>7</td>
-<td>Sensor Status, X</td>
-</tr>
-<tr>
-<td>8</td>
 <td>Broadcast</td>
 </tr>
 </tbody>
@@ -868,99 +796,6 @@
 </tr>
 </tbody>
 </table>
-<h3 id="team-verification">Team Verification:</h3>
-<table>
-<thead>
-<tr>
-<th>Message Type</th>
-<th>Message ID <br /> Type <br /> uint8_t</th>
-<th>Alex <br /> Role: HMI <br /> ID: a</th>
-<th>Frank <br /> Role: Actuator <br /> ID: c</th>
-<th>Tyler <br /> Role: Sensor <br /> ID: d</th>
-<th>Luis <br /> Role: MQTT <br /> ID: b</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Motor Value</td>
-<td>0x01</td>
-<td>S:</td>
-<td>R</td>
-<td>-</td>
-<td>S: (mqtt topic: /EGR314/TEAM202LS/PUB)</td>
-</tr>
-<tr>
-<td>Sensor Value</td>
-<td>0x02</td>
-<td>R:</td>
-<td>-</td>
-<td>S</td>
-<td>R: (mqtt topic: /EGR314/TEAM202LS/SENSOR)</td>
-</tr>
-<tr>
-<td>Wifi Error Message Value</td>
-<td>0x03</td>
-<td>R</td>
-<td>R</td>
-<td>R</td>
-<td>S: display error message</td>
-</tr>
-<tr>
-<td>Wifi Status</td>
-<td>0x04</td>
-<td>R</td>
-<td>R</td>
-<td>R</td>
-<td>S: (When wifi initially establishes. After wifi established, send if status changes.)</td>
-</tr>
-<tr>
-<td>Subsystem Error Message</td>
-<td>0x05</td>
-<td>S or R</td>
-<td>S or R</td>
-<td>S or R</td>
-<td>R: (mqtt topic: /EGR314/TEAM202LS/ERROR_MESSAGE)</td>
-</tr>
-<tr>
-<td>Motor Status</td>
-<td>0x06</td>
-<td>R</td>
-<td>S</td>
-<td>-</td>
-<td>R: (mqtt topic: /EGR314/TEAM202LS/PUB)</td>
-</tr>
-<tr>
-<td>Sensor Status</td>
-<td>0x07</td>
-<td>R</td>
-<td>-</td>
-<td>S</td>
-<td>R: (mqtt topic: /EGR314/TEAM202LS/SENSOR)</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Item</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>S</td>
-<td>Sends the message</td>
-</tr>
-<tr>
-<td>R</td>
-<td>Receives &amp; does something with message</td>
-</tr>
-<tr>
-<td>-</td>
-<td>Do nothing, passes message</td>
-</tr>
-</tbody>
-</table>
 <h3 id="message-type-1">Message Type 1:</h3>
 <table>
 <thead>
@@ -973,7 +808,6 @@
 <th>Byte 6 (char)</th>
 <th>Byte 7 (char)</th>
 <th>Byte 8 (char)</th>
-<th>Byte 9 (char)</th>
 </tr>
 </thead>
 <tbody>
@@ -984,7 +818,6 @@
 <td>Dest ID (char)</td>
 <td>Message Type (int8_t)</td>
 <td>X(char)</td>
-<td>Y(char)</td>
 <td>Y</td>
 <td>B</td>
 </tr>
@@ -999,10 +832,9 @@
 <th>Byte 3 (char)</th>
 <th>Byte 4 (char)</th>
 <th>Byte 5 (int8_t)</th>
-<th>Byte 6 (char)</th>
-<th>Byte 7 (int8_t)</th>
+<th>Byte 6 (int8_t)</th>
+<th>Byte 7 (char)</th>
 <th>Byte 8 (char)</th>
-<th>Byte 9 (char)</th>
 </tr>
 </thead>
 <tbody>
@@ -1012,8 +844,7 @@
 <td>Source ID (char)</td>
 <td>Dest ID (char)</td>
 <td>Message Type (int8_t)</td>
-<td>X(char)</td>
-<td>Y(int8_t)</td>
+<td>X(int8_t)</td>
 <td>Y</td>
 <td>B</td>
 </tr>
@@ -1028,9 +859,9 @@
 <th>Byte 3 (char)</th>
 <th>Byte 4 (char)</th>
 <th>Byte 5 (int8_t)</th>
-<th>Byte 6-55 (string)</th>
-<th>Byte 56 (char)</th>
-<th>Byte 57 (char)</th>
+<th>Byte 6 (int8_t)</th>
+<th>Byte 7 (char)</th>
+<th>Byte 8 (char)</th>
 </tr>
 </thead>
 <tbody>
@@ -1040,121 +871,13 @@
 <td>Source ID (char)</td>
 <td>Dest ID (char)</td>
 <td>Message Type (int8_t)</td>
-<td>String</td>
+<td>X(int8_t)</td>
 <td>Y</td>
 <td>B</td>
 </tr>
 </tbody>
 </table>
 <h3 id="message-type-4">Message Type 4:</h3>
-<table>
-<thead>
-<tr>
-<th>Byte 1 (char)</th>
-<th>Byte 2 (char)</th>
-<th>Byte 3 (char)</th>
-<th>Byte 4 (char)</th>
-<th>Byte 5 (int8_t)</th>
-<th>Byte 6 (uint8_t)</th>
-<th>Byte 7 (char)</th>
-<th>Byte 8 (char)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>Z</td>
-<td>Source ID (char)</td>
-<td>Dest ID (char)</td>
-<td>Message Type (int8_t)</td>
-<td>X(uint8_t)</td>
-<td>Y</td>
-<td>B</td>
-</tr>
-</tbody>
-</table>
-<h3 id="message-type-5">Message Type 5:</h3>
-<table>
-<thead>
-<tr>
-<th>Byte 1 (char)</th>
-<th>Byte 2 (char)</th>
-<th>Byte 3 (char)</th>
-<th>Byte 4 (char)</th>
-<th>Byte 5 (int8_t)</th>
-<th>Byte 6 (char)</th>
-<th>Byte 7 (char)</th>
-<th>Byte 8 (char)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>Z</td>
-<td>Source ID (char)</td>
-<td>Dest ID (char)</td>
-<td>Message Type (int8_t)</td>
-<td>X(char)</td>
-<td>Y</td>
-<td>B</td>
-</tr>
-</tbody>
-</table>
-<h3 id="message-type-6">Message Type 6:</h3>
-<table>
-<thead>
-<tr>
-<th>Byte 1 (char)</th>
-<th>Byte 2 (char)</th>
-<th>Byte 3 (char)</th>
-<th>Byte 4 (char)</th>
-<th>Byte 5 (int8_t)</th>
-<th>Byte 6 (uint8_t)</th>
-<th>Byte 7 (char)</th>
-<th>Byte 8 (char)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>Z</td>
-<td>Source ID (char)</td>
-<td>Dest ID (char)</td>
-<td>Message Type (int8_t)</td>
-<td>X(uint8_t)</td>
-<td>Y</td>
-<td>B</td>
-</tr>
-</tbody>
-</table>
-<h3 id="message-type-7">Message Type 7:</h3>
-<table>
-<thead>
-<tr>
-<th>Byte 1 (char)</th>
-<th>Byte 2 (char)</th>
-<th>Byte 3 (char)</th>
-<th>Byte 4 (char)</th>
-<th>Byte 5 (int8_t)</th>
-<th>Byte 6 (uint8_t)</th>
-<th>Byte 7 (char)</th>
-<th>Byte 8 (char)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>A</td>
-<td>Z</td>
-<td>Source ID (char)</td>
-<td>Dest ID (char)</td>
-<td>Message Type (int8_t)</td>
-<td>X(uint8_t)</td>
-<td>Y</td>
-<td>B</td>
-</tr>
-</tbody>
-</table>
-<h3 id="message-type-8">Message Type 8:</h3>
 <table>
 <thead>
 <tr>
@@ -1181,9 +904,68 @@
 </tr>
 </tbody>
 </table>
-<h4 id="wifi-status-code-key">Wifi Status Code Key</h4>
-<li>Connected:     1 </li>
-<li>Not Connected: 0 </li>
+<h2 id="team-verification-table">Team Verification Table:</h2>
+<h3 id="team-verification">Team Verification:</h3>
+<table>
+<thead>
+<tr>
+<th>Message Type</th>
+<th>Message ID <br /> Type <br /> uint8_t</th>
+<th>Alex <br /> Role: HMI <br /> ID: a</th>
+<th>Frank <br /> Role: Actuator <br /> ID: c</th>
+<th>Tyler <br /> Role: Sensor <br /> ID: d</th>
+<th>Luis <br /> Role: MQTT <br /> ID: b</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Motor Value</td>
+<td>0x01</td>
+<td>S:</td>
+<td>R:</td>
+<td>-</td>
+<td>S: (mqtt topic: /EGR314/TEAM202LS/SUB)</td>
+</tr>
+<tr>
+<td>Sensor Value</td>
+<td>0x02</td>
+<td>R:</td>
+<td>-</td>
+<td>S:</td>
+<td>R: (mqtt topic: /EGR314/TEAM202LS/SENSOR)</td>
+</tr>
+<tr>
+<td>Target RPM</td>
+<td>0x03</td>
+<td>S:</td>
+<td>-</td>
+<td>R:</td>
+<td>S: (mqtt topic: /EGR314/TEAM202LS/RPM)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S</td>
+<td>Sends the message</td>
+</tr>
+<tr>
+<td>R</td>
+<td>Receives &amp; does something with message</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Do nothing, passes message</td>
+</tr>
+</tbody>
+</table>
 
 
 
