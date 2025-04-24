@@ -454,6 +454,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#team-verification" class="md-nav__link">
+    Team Verification:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#message-type-1" class="md-nav__link">
     Message Type 1:
   </a>
@@ -689,6 +696,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#team-verification" class="md-nav__link">
+    Team Verification:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#message-type-1" class="md-nav__link">
     Message Type 1:
   </a>
@@ -851,6 +865,99 @@
 <td>b</td>
 <td>c</td>
 <td>d</td>
+</tr>
+</tbody>
+</table>
+<h3 id="team-verification">Team Verification:</h3>
+<table>
+<thead>
+<tr>
+<th>Message Type</th>
+<th>Message ID <br /> Type <br /> uint8_t</th>
+<th>Alex <br /> Role: HMI <br /> ID: a</th>
+<th>Frank <br /> Role: Actuator <br /> ID: c</th>
+<th>Tyler <br /> Role: Sensor <br /> ID: d</th>
+<th>Luis <br /> Role: MQTT <br /> ID: b</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Motor Value</td>
+<td>0x01</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Sensor Value</td>
+<td>0x02</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wifi Error Message Value</td>
+<td>0x03</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Wifi Status Value</td>
+<td>0x04</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Subsystem Error Message</td>
+<td>0x05</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Motor Status</td>
+<td>0x06</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Sensor Status</td>
+<td>0x07</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S</td>
+<td>Sends the message</td>
+</tr>
+<tr>
+<td>R</td>
+<td>Receives &amp; does something with message</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Do nothing, passes message</td>
 </tr>
 </tbody>
 </table>
