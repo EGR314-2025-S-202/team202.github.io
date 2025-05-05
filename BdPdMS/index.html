@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#block-diagram-process-diagram-and-message-structure" class="md-skip">
+        <a href="#block-diagram" class="md-skip">
           Skip to content
         </a>
       
@@ -421,28 +421,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#block-diagram-process-diagram-and-message-structure" class="md-nav__link">
-    Block Diagram, Process Diagram, and Message Structure
-  </a>
-  
-    <nav class="md-nav" aria-label="Block Diagram, Process Diagram, and Message Structure">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#block-diagram" class="md-nav__link">
     Block Diagram
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#process-diagram" class="md-nav__link">
     Process Diagram
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#message-structure" class="md-nav__link">
     Message Structure
   </a>
@@ -489,23 +481,18 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#team-verification-table" class="md-nav__link">
     Team Verification Table:
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#top-5-biggest-changes" class="md-nav__link">
     Top 5 Biggest Changes
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -646,28 +633,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#block-diagram-process-diagram-and-message-structure" class="md-nav__link">
-    Block Diagram, Process Diagram, and Message Structure
-  </a>
-  
-    <nav class="md-nav" aria-label="Block Diagram, Process Diagram, and Message Structure">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#block-diagram" class="md-nav__link">
     Block Diagram
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#process-diagram" class="md-nav__link">
     Process Diagram
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#message-structure" class="md-nav__link">
     Message Structure
   </a>
@@ -714,23 +693,18 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#team-verification-table" class="md-nav__link">
     Team Verification Table:
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#top-5-biggest-changes" class="md-nav__link">
     Top 5 Biggest Changes
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -759,14 +733,13 @@
 
   <h1>Block Diagram</h1>
 
-<h2 id="block-diagram-process-diagram-and-message-structure">Block Diagram, Process Diagram, and Message Structure</h2>
 <h3 id="block-diagram">Block Diagram</h3>
 <p><a class="glightbox" href="../TeamBlockDiagram.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Figure 1: Team Block Diagram" src="../TeamBlockDiagram.png" /></a></p>
 <h3 id="process-diagram">Process Diagram</h3>
 <p><a class="glightbox" href="../SequenceDiagram.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Figure 2: Communication Process Diagram" src="../SequenceDiagram.jpg" /></a></p>
-<p>Our communication sequence easily grants the user full control over the stepper motor’s speed and visibility of its current RPM value via the Hall Effect sensor.  This system is designed for intuitive interaction with energy generation processes, so the sequence is built to support user expectations around control, feedback, real time visibility, and accessibility.
-The various buttons, and functions per button, and wifi system allow for dual user access (web-based and in-person), so that remote users can engage with the system online while physical ones interact locally.  Along with multi-user operability and control interface consistency, each task of the system is designed to function at the press of a button from either user.  Two buttons send messages to their corresponding neighboring subsystems to control the stepper motor gate and monitor the Hall Effect Sensor all at once.  As the Hall Effect sensor reads new inputs at a fast rate, one of the HMI board’s buttons will switch the OLED screen so the user can view the current value, as well as observe changes in value upon each new button press, providing almost immediate feedback. When the wifi system receives the Hall Effect sensor value it displays it to the user via MQTT, periodically refreshing the value. The target RPM can also be modified upon another button press, which toggles the RPM value between 0 to 100.  Upon selection, the target value is sent to all other boards. The wifi system operates in a similar manner. It receives the targeted RPM from the user over MQTT, the received publication is then passed to the Hall Effect Sensor system to conduct their feedback loop.<br />
-This is a similar process for user control over the stepper motor; a separate button will send messages directly and exclusively to the subsystem responsible for motor control. Web-based users can also interact with the exhibit this way. By publishing a message in MQTT, the user can manipulate the stepper motor into three positions, open, half-open, and closed. The system that contains the wifi receives the publication and sends a message directed to the actuator system, simultaneously updating the MQTT text box that notifies the user that the motor has been set to the user's desired position.  </p>
+<p>Our communication sequence easily grants the user full control over the stepper motor’s speed and visibility of its current RPM value via the Hall Effect sensor.  This system is designed for intuitive interaction with energy generation processes, so the sequence is built to support user expectations around control, feedback, real time visibility, and accessibility.</p>
+<p>The various buttons, and functions per button, and wifi system allow for dual user access (web-based and in-person), so that remote users can engage with the system online while physical ones interact locally.  Along with multi-user operability and control interface consistency, each task of the system is designed to function at the press of a button from either user.  Two buttons send messages to their corresponding neighboring subsystems to control the stepper motor gate and monitor the Hall Effect Sensor all at once.  As the Hall Effect sensor reads new inputs at a fast rate, one of the HMI board’s buttons will switch the OLED screen so the user can view the current value, as well as observe changes in value upon each new button press, providing almost immediate feedback. When the wifi system receives the Hall Effect sensor value it displays it to the user via MQTT, periodically refreshing the value. The target RPM can also be modified upon another button press, which toggles the RPM value between 0 to 100.  Upon selection, the target value is sent to all other boards. The wifi system operates in a similar manner. It receives the targeted RPM from the user over MQTT, the received publication is then passed to the Hall Effect Sensor system to conduct their feedback loop.  </p>
+<p>This is a similar process for user control over the stepper motor; a separate button will send messages directly and exclusively to the subsystem responsible for motor control. Web-based users can also interact with the exhibit this way. By publishing a message in MQTT, the user can manipulate the stepper motor into three positions, open, half-open, and closed. The system that contains the wifi receives the publication and sends a message directed to the actuator system, simultaneously updating the MQTT text box that notifies the user that the motor has been set to the user's desired position.  </p>
 <h3 id="message-structure">Message Structure</h3>
 <table>
 <thead>
@@ -984,8 +957,8 @@ This is a similar process for user control over the stepper motor; a separate bu
 </tr>
 </tbody>
 </table>
-<p>The first approach the team took in designing the message structure was deciding what information is mandatory for each subsystem. After creating our mandatory list of messages, team 202 would then include messages that would help them debug the system in real-time. After all potential messages were created, we then trimmed the list. Most, if not all trimmed messages, include messages that provide information that can be obtained by another message.
-Once we had compiled our list of messages, team 202 then discussed the best way to format them. We came to the conclusion that including "message type" in our message structure will ensure that each member will know the context of the message they are receiving. Additionally, we had discussed that it would be inefficient for a device to send the same message to more than one system, so we created those messages to be sent out as a broadcast message as well.</p>
+<p>The first approach the team took in designing the message structure was deciding what information is mandatory for each subsystem. After creating our mandatory list of messages, team 202 would then include messages that would help them debug the system in real-time. After all potential messages were created, we then trimmed the list. Most, if not all trimmed messages, include messages that provide information that can be obtained by another message.</p>
+<p>Once we had compiled our list of messages, team 202 then discussed the best way to format them. We came to the conclusion that including "message type" in our message structure will ensure that each member will know the context of the message they are receiving. Additionally, we had discussed that it would be inefficient for a device to send the same message to more than one system, so we created those messages to be sent out as a broadcast message as well.</p>
 <h3 id="top-5-biggest-changes">Top 5 Biggest Changes</h3>
 <li>We originally had 8 messages, broadcast message included. Four messages were dropped as they can be interpreted by another message. Dropping these messages allowed the team to continue developing the exhibit as well as decreases the noise between systems. This also ensures that the only communication happening between systems are priority and necessary.</li>
 <li></li>
