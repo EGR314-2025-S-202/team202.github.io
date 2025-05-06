@@ -490,8 +490,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#top-5-biggest-changes" class="md-nav__link">
-    Top 5 Biggest Changes
+  <a href="#top-5-biggest-changes-to-api" class="md-nav__link">
+    Top 5 Biggest Changes To API
   </a>
   
 </li>
@@ -702,8 +702,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#top-5-biggest-changes" class="md-nav__link">
-    Top 5 Biggest Changes
+  <a href="#top-5-biggest-changes-to-api" class="md-nav__link">
+    Top 5 Biggest Changes To API
   </a>
   
 </li>
@@ -735,6 +735,7 @@
 
 <h3 id="block-diagram">Block Diagram</h3>
 <p><a class="glightbox" href="../TeamBlockDiagram.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Figure 1: Team Block Diagram" src="../TeamBlockDiagram.png" /></a></p>
+<p>While connecting our individual block diagrams together, the team started with which systems needs to be next to each other. That would be the actuator and sensor subsystem, these systems need to be connected to each other to conduct SPI communication to facilitate a feedback loop. All other systems can be placed around these two, as communication will be handled through UART. To communicate through UART and complete product requirements, each individual system has a ribbon cable header. The ribbon cable header has power, ground, and receiving and transmitting pins. We pass these pins to each other to communicate effectively.</p>
 <h3 id="process-diagram">Process Diagram</h3>
 <p><a class="glightbox" href="../SequenceDiagram.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Figure 2: Communication Process Diagram" src="../SequenceDiagram.jpg" /></a></p>
 <p>Our communication sequence easily grants the user full control over the stepper motor’s speed and visibility of its current RPM value via the Hall Effect sensor.  This system is designed for intuitive interaction with energy generation processes, so the sequence is built to support user expectations around control, feedback, real time visibility, and accessibility.</p>
@@ -959,9 +960,9 @@
 </table>
 <p>The first approach the team took in designing the message structure was deciding what information is mandatory for each subsystem. After creating our mandatory list of messages, team 202 would then include messages that would help them debug the system in real-time. After all potential messages were created, we then trimmed the list. Most, if not all trimmed messages, include messages that provide information that can be obtained by another message.</p>
 <p>Once we had compiled our list of messages, team 202 then discussed the best way to format them. We came to the conclusion that including "message type" in our message structure will ensure that each member will know the context of the message they are receiving. Additionally, we had discussed that it would be inefficient for a device to send the same message to more than one system, so we created those messages to be sent out as a broadcast message as well.</p>
-<h3 id="top-5-biggest-changes">Top 5 Biggest Changes</h3>
+<h3 id="top-5-biggest-changes-to-api">Top 5 Biggest Changes To API</h3>
 <li>We originally had 8 messages, broadcast message included. Four messages were dropped as they can be interpreted by another message. Dropping these messages allowed the team to continue developing the exhibit as well as decreases the noise between systems. This also ensures that the only communication happening between systems are priority and necessary.</li>
-<li></li>
+<li>We changed the message that the actuator system would be receiving. Currently we have the motor accept values 0, 1, or 2. Originally we were gonna have the actuator system accept only values between -1 and 1. So instead of setting the actuator in a predestined position the actuator would respond to a button press.</li>
 <li></li>
 <li></li>
 <li></li>
